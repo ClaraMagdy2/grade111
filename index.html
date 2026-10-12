@@ -22,7 +22,7 @@
       <button class="nav-item" data-page="data">▤ <span>Data Structures</span></button>
       <button class="nav-item" data-page="dashboard">◈ <span>Project Summary</span></button>
     </nav>
-    <div class="sidebar-note">GRADE 12<br>COMPUTING PROJECT</div>
+    <div class="sidebar-note">GRADE 11<br>COMPUTING PROJECT</div>
   </aside>
 
   <main class="main">
@@ -33,7 +33,7 @@
 
     <section class="page active" id="page-home">
       <div class="hero">
-        <span class="eyebrow">GRADE 12 · COMPUTING PROJECT</span>
+        <span class="eyebrow">GRADE 11 · COMPUTING PROJECT</span>
         <h1>Smart Hospital<br><em>Command Center</em></h1>
         <p>A connected hospital computing project combining computing systems, hardware and logic, networks, cybersecurity, Python algorithms, and data structures.</p>
       </div>
@@ -95,7 +95,7 @@
       <div class="page-intro"><span class="eyebrow">03 · NETWORK CENTER</span><h1>Hospital network architecture</h1><p>The network connects hospital servers and devices through the router and switches so departments can exchange information.</p></div>
       <div class="network-cards">
         <div class="info-card"><h3>Network Devices</h3><p>Internet · Router · Hospital Server · PACS Server · Hub/Switch · PCs · Mobile/IoT devices</p></div>
-        <div class="info-card"><h3>Performance Metrics</h3><p><b>Bandwidth:</b> 100 Mbps<br><b>Network Load:</b> 65%<br><b>Latency:</b> 12 ms</p></div>
+        <div class="info-card"><h3>Performance Metrics</h3><p><b>Bandwidth:</b> 100 Mbps<br><b>Network Load:</b> 65%<br><b>Latency:</b> 11 ms</p></div>
         <div class="info-card"><h3>Purpose</h3><p>Support communication between clinical systems, servers, computers, and connected hospital devices.</p></div>
       </div>
       <div class="image-card"><div class="card-head"><h3>Hospital Network Topology</h3><span>Network architecture</span></div><img src="assets/network-topology.png" alt="Hospital network topology"></div>
@@ -121,12 +121,12 @@
       <div class="algorithm-layout">
         <div class="info-card">
           <h3>Decision Rules</h3>
-          <p><b>Critical:</b> temperature &gt; 38.5°C OR heart rate &gt; 120 OR oxygen &lt; 90%</p>
+          <p><b>Critical:</b> temperature &gt; 38.5°C OR heart rate &gt; 110 OR oxygen &lt; 90%</p>
           <p><b>Warning:</b> temperature &gt; 37.5°C OR heart rate &gt; 100 OR oxygen &lt; 95%</p>
           <p><b>Stable:</b> none of the warning or critical conditions are met.</p>
         </div>
         <div class="code-card"><div class="code-head">evaluate_patient()</div><pre>def evaluate_patient(temp, heart_rate, oxygen):
-    if temp &gt; 38.5 or heart_rate &gt; 120 or oxygen &lt; 90:
+    if temp &gt; 38.5 or heart_rate &gt; 110 or oxygen &lt; 90:
         return "CRITICAL EMERGENCY"
     elif temp &gt; 37.5 or heart_rate &gt; 100 or oxygen &lt; 95:
         return "WARNING - MONITOR"
@@ -139,12 +139,12 @@
       <div class="page-intro"><span class="eyebrow">06 · DATA STRUCTURES</span><h1>Patient data organization</h1><p>A list of dictionaries stores patient information so the algorithm can process multiple patients.</p></div>
       <div class="code-card"><div class="code-head">hospital_database</div><pre>hospital_database = [
     {"id": "P101", "room": "ICU-01", "temp": 37.0, "hr": 75, "o2": 98},
-    {"id": "P102", "room": "ICU-02", "temp": 39.2, "hr": 125, "o2": 88},
+    {"id": "P102", "room": "ICU-02", "temp": 39.2, "hr": 115, "o2": 88},
     {"id": "P103", "room": "ER-05",  "temp": 36.8, "hr": 82, "o2": 96}
 ]</pre></div>
       <div class="table-card"><div class="card-head"><h3>Example Patient Records</h3><span>List + dictionaries</span></div><table><thead><tr><th>ID</th><th>Room</th><th>Temperature</th><th>Heart Rate</th><th>O₂</th><th>Example Status</th></tr></thead><tbody>
         <tr><td>P101</td><td>ICU-01</td><td>37.0°C</td><td>75</td><td>98%</td><td><span class="pill stable">STABLE</span></td></tr>
-        <tr><td>P102</td><td>ICU-02</td><td>39.2°C</td><td>125</td><td>88%</td><td><span class="pill critical">CRITICAL</span></td></tr>
+        <tr><td>P102</td><td>ICU-02</td><td>39.2°C</td><td>115</td><td>88%</td><td><span class="pill critical">CRITICAL</span></td></tr>
         <tr><td>P103</td><td>ER-05</td><td>36.8°C</td><td>82</td><td>96%</td><td><span class="pill stable">STABLE</span></td></tr>
       </tbody></table></div>
       <div class="image-card"><div class="card-head"><h3>Python Output</h3><span>Project evidence</span></div><img src="assets/python-patients.png" alt="Python patient data output"></div>
